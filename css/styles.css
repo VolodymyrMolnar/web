@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3498db;
+  padding: 1rem;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+}
+
+.drug-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.drug {
+  background: white;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.drug:hover {
+  transform: scale(1.02);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+
+/*# sourceMappingURL=styles.css.map */

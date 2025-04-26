@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Drug - Pharmacy App</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Add New Drug</h1>
+  </header>
+
+  <main>
+    <form class="drug-form">
+      <label>Drug Name:
+        <input type="text" name="drug-name" required>
+      </label>
+
+      <label>Price:
+        <input type="number" name="price" required>
+      </label>
+
+      <label>In Stock:
+        <input type="checkbox" name="in-stock">
+      </label>
+
+      <button type="submit">Add Drug</button>
+      <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Pharmacy App</p>
+  </footer>
+</body>
+</html>
