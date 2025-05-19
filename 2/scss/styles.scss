@@ -1,0 +1,163 @@
+@use 'variables' as *;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 1rem;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+.drug-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.drug {
+  background: white;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button {
+  background-color: $secondary-color;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: color.adjust($secondary-color, $lightness: -10%);
+}
+}
+.logout-message, .error-message {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  
+
+  /* Стилі для сторінки додавання препарату */
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.drug-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drug-form label {
+  font-weight: bold;
+  margin-bottom: -15px;
+}
+
+.drug-form input[type="text"],
+.drug-form input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-container label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button.primary {
+  background-color: #4CAF50;
+}
+
+button.secondary {
+  background-color: #757575;
+}
+
+button.secondary:hover {
+  background-color: #616161;
+}
