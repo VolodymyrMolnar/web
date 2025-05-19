@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Редагувати препарат - Pharmacy App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="edit-drug.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pharmacy App</h1>
+      <nav>
+        <a href="index.html">На головну</a>
+        <a href="login.html">Вийти</a>
+      </nav>
+    </div>
+  </header>
+<main>
+  <div class="form-container">
+    <h2>Редагувати препарат</h2>
+    <form id="edit-drug-form" class="drug-form">
+    <label for="drug-name">Назва препарату:</label>
+    <input type="text" id="drug-name" name="drug-name" required>
+
+    <label for="price">Ціна:</label>
+    <input type="number" id="price" name="price" required>
+
+    <label for="quantity">Кількість:</label>
+    <input type="number" id="quantity" name="quantity" min="0" required>
+
+    <label for="description">Опис:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="in-stock" name="in-stock">
+        <label for="in-stock">В наявності</label>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="primary">Зберегти зміни</button>
+        <button type="button" class="secondary" onclick="window.location.href='index.html'">Скасувати</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Pharmacy App</p>
+    </div>
+  </footer>
+
+</body>
+</html>

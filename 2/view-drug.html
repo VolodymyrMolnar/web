@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі препарату - Pharmacy App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Pharmacy App</h1>
+        <nav>
+            <a href="index.html">На головну</a>
+            <a href="login.html">Увійти</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="drug-details-container">
+        <div class="drug-details-card">
+            <h2 id="drug-name">Завантаження...</h2>
+
+            <div class="drug-info">
+                <div class="info-row">
+                    <span class="info-label">Ціна:</span>
+                    <span class="info-value" id="drug-price">₴</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Кількість:</span>
+                    <span class="info-value" id="drug-quantity">---</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Наявність:</span>
+                    <span class="info-value" id="drug-instock">---</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Опис:</span>
+                    <span class="info-value" id="drug-description">---</span>
+                </div>
+            </div>
+
+            <div class="drug-actions">
+                <button class="primary" id="buy-button">Купити</button>
+                <a href="#" id="edit-link" class="btn secondary hidden">Редагувати</a>
+                <a href="index.html" class="btn secondary">Назад до списку</a>
+                <button class="danger" id="delete-button">Видалити</button>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Pharmacy App</p>
+    </div>
+</footer>
+
+<script src="view-drug.js"></script>
+</body>
+</html>
